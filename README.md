@@ -16,6 +16,7 @@ A few useful methods, properties, and events for this assignment:
 - `mousedown`
 - `mouseover`
 - `mouseup`
+
 Assignment:
 Based on the in-class demonstration, complete the following user stories:
 As a user, I can:
