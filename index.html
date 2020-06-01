@@ -17,8 +17,30 @@
         <button onclick="removeColumn">Remove Column</button>
         <button onclick="removeRow()">Remove Row</button>
 
-</form>
+<form>
     <p>
         <label>Pick a color</label>
-        <select id="color-select" onchange="setCureentColor(this.value"
+        <select id="color-select" onchange="setCureentColor(this.value)">
+        <option value="fafa14">yellow</option>
+        <option value="041afb">blue</option>
+        <option value="4300e8">purple</option>
+        <option value="000000">black</option>
+    </select>  
     </p>
+</form>
+
+<button onclick="setUncolored()">Fill All</button>
+<button onclick="seetAllCurrent()">Fill All</button>
+<button onclick="clearAll()">Clear All</button>
+
+<table id=main-grid>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
