@@ -77,7 +77,45 @@ for (let i=0; i < cellList.length; i++) {
     const cell = cellList[i];
     initializeCell(cell)
 }
+
 function changeColor() {
     this.style.backgroundColor = currentColor;
     this.classList.remove("uncolored")
+}
+
+function setCurrentColor(color) {
+    currentColor = color;
+}
+
+
+function setUncolored() {
+    let allCells = document.getElementsByTagName("td");
+    let allCellsList = [...allCells];
+
+    const uncolored = allCellsList.filter(cell => {
+        return cell.classList.contains("uncolored");
+    });
+
+    uncolored.forEach(cell => {
+        cell.style.backgroundColor = currentColor;
+        cell.classList.remove("uncolored");
+    })
+}
+
+function setAllCurrent() {
+    let allCells = document.getElementsByTagName("td");
+    let allCellsList = [...cells];
+    allCellsList.forEach(cell => {
+        cell.style.backgroundColor = currentColor;
+        cell.classList.remove("uncolored");
+    })
+}
+
+function clearAll() {
+    let allCells = document.getElementsByTagName("td");
+    let allCellsList = [...cells];
+    allCellsList.forEach(cell => {
+        cell.style.backgroundColor = 'red';
+        cell.classList.add("uncolored");
+    })
 }
