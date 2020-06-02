@@ -115,7 +115,7 @@ function clearAll() {
     let allCells = document.getElementsByTagName("td");
     let allCellsList = [...cells];
     allCellsList.forEach(cell => {
-        cell.style.backgroundColor = 'red';
+        cell.style.backgroundColor = 'gray';
         cell.classList.add("uncolored");
     })
 }
